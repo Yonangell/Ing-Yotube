@@ -4,3 +4,43 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans' sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas:  "cabecera cabecera" 
+                                 "nav main";
+    transition: all .3s ease;
+}
+
+.contenedor active {
+    grid-template-columns: 300px auto;
+}
+
+.cabecera {
+    grid-area: cabecera;
+    background-color: #e9e3e3;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: red;
+}
+
+
+
+main {
+    grid: main;
+    background-color: brown;
+}
+
+
+
+
